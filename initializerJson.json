@@ -335,6 +335,17 @@
     "statusCode": 200
   }
  },
+	{
+  "httpRequest" : {
+    "method" : "POST",
+    "path": "/insurances/v0/validate-money-laundering",
+		"body":{"identityDocument":{"documentType": {"id":"CURP"}, "documentNumber": "QUAL930106HGRRLS05"}, "product": {"id": "4046","plan": {"id": "041"}}}
+	},
+  "httpResponse" : {
+   "body" : {"data": {"dictumResolution": {"id": "00330","description": "Validación Cúmulos - No existe monto configurado para Suma máxima o Suma mínima"}}},
+    "statusCode": 200
+  }
+ },
  {
   "httpRequest" : {
     "method" : "POST",
