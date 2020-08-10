@@ -142,6 +142,17 @@
  {
   "httpRequest" : {
     "method" : "POST",
+    "path" : "/lifehealth-insurances/v0/customize-plan",
+    "body" : {"alliance":{"id":"VVSDP001"},"planType":{"id":"001"},"insuredAmount":{"amount":1000000,"currency":"MXN"}}
+  },
+  "httpResponse" : {
+    "body" : {"data":{"trade":{"id":"VIIN"},"coverages":[{"id":"0047","contractingCriteria":[{"id":"VVSDPPORCINVTOTPER","units":[{"id":"002","unitElements":[{"unitType":"AMOUNT","amount":500000,"currency":"MXN"},{"unitType":"PERCENTAGE","percentage":0.5},{"unitType":"TEXT","text":"BOTH"}]}]}]},{"id":"0071","contractingCriteria":[{"id":"VVSDPPORCPDCANCER","units":[{"id":"002","unitElements":[{"unitType":"AMOUNT","amount":300000,"currency":"MXN"},{"unitType":"PERCENTAGE","percentage":0.3},{"unitType":"TEXT","text":"BOTH"}]}]}]},{"id":"1320","contractingCriteria":[{"id":"VVSDPPORCGFUNERARIO","units":[{"id":"002","unitElements":[{"unitType":"AMOUNT","amount":50000,"currency":"MXN"},{"unitType":"PERCENTAGE","percentage":0.05},{"unitType":"TEXT","text":"BOTH"}]}]}]},{"id":"CV07","contractingCriteria":[{"id":"VVSDPPORCAETERM","units":[{"id":"002","unitElements":[{"unitType":"AMOUNT","amount":200000,"currency":"MXN"},{"unitType":"PERCENTAGE","percentage":0.2},{"unitType":"TEXT","text":"BOTH"}]}]}]},{"id":"VI08","contractingCriteria":[{"id":"VVSDPORCMUERTEACC","units":[{"id":"002","unitElements":[{"unitType":"AMOUNT","amount":1000000,"currency":"MXN"},{"unitType":"PERCENTAGE","percentage":1},{"unitType":"TEXT","text":"BOTH"}]}]}]}],"incomes":[{"id":"002","description":"12 meses","amount":{"amount":83333.33,"currency":"MXN"}},{"id":"003","description":"24 meses","amount":{"amount":41666.66,"currency":"MXN"}},{"id":"004","description":"36 meses","amount":{"amount":27777.77,"currency":"MXN"}},{"id":"005","description":"48 meses","amount":{"amount":20833.33,"currency":"MXN"}},{"id":"006","description":"60 meses","amount":{"amount":16666.66,"currency":"MXN"}}]}},
+    "statusCode": 200
+  }
+ },
+ {
+  "httpRequest" : {
+    "method" : "POST",
     "path" : "/corporateCatalogs/V03/DP/listCarInsuranceCatalogs",
     "body" : {"header":{"aapType":"10000147","dateRequest":"2019-11-29 12:23:11.787","managementUnit":"VVSDP001","idRequest":"vidaPublico","dateConsumerInvocation":"2019-11-29 12:23:11.787"},"productCode":"4046","iRequest":{"productPlan":{"planCode":"041","subPlanId":"033"}}}
   },
