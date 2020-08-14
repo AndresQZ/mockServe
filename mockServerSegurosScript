@@ -5,7 +5,7 @@ docker run -d -p 1080:1080 mockserver/mockserver -serverPort 1080 -jvmOptions "-
 -Dmockserver.initializationJsonPath=/Users/xmy0619/Documents/mockSeverDoc/initializerJson.json
 -Dmockserver.corsAllowHeaders='Allow, Content-Encoding, Content-Length, Content-Type, Expires, Last-Modified, Location, Server, Vary, Authorization, tsec'"
 
-docker run -d -p 1080:1080 --name="api_seguros" --mount type=bind,source=/Users/xmy0619/Documents/mockSeverDoc/init/,target=/config mockserver/mockserver -serverPort 1080 \
+docker run -d -p 1080:1080 --name api_seguros --mount type=bind,source=/Users/xmy0619/Documents/mockSeverDoc/mockServe/init/,target=/config mockserver/mockserver -serverPort 1080 \
 -jvmOptions "-Dmockserver.enableCORSForAllResponses=true -Dmockserver.persistExpectations=true \
 -Dmockserver.persistedExpectationsPath='/config/initializerJson.json' \
 -Dmockserver.initializationJsonPath='/config/initializerJson.json' \
