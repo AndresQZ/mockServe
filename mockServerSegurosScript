@@ -15,8 +15,13 @@ docker run -d -p 1080:1080 --name api_seguros --mount type=bind,source=/Users/An
 docker run -d -p 1080:1080 --name api_seguros --mount type=bind,source=/Users/Andres/Documents/mockServe/init/,target=/config mockserver/mockserver -serverPort 1080
 
 
-
+MERL900106HGRSDS13
 
 4555093001008222
-04/27
+04/24
+LEON AXEL GONZALEZ PEREZ
 270
+
+4772-9100-0027-9032
+04/2024
+777
